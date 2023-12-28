@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import DetailPage from './pages/DetailProduct/DetailPage';
+import { router } from './router';
+import NavCart from './layouts/Nav/NavCart/NavCart';
+import NavDetail from './layouts/Nav/NavDetail/NavDetail';
+import CartPage from './pages/CartPage/CartPage';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+      <RouterProvider router={router}></RouterProvider>   
+     {/* <NavCart></NavCart> */}
+     {/* <CartPage></CartPage> */}
+    </>
   );
 }
 

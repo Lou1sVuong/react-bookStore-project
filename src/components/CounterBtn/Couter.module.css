@@ -1,0 +1,40 @@
+@import url(/src/common/styles/_global.css);
+.couter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151.154px;
+    height: 51.923px;
+    border: 1px solid var(--font-color-black);  
+    border-radius: 10px ;
+    
+}
+
+.btnHandle,
+.content {
+    border: none;
+    color: var(--Default-Text-Color, #191C1F);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+    display: flex;
+    width: 48px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: transparent;
+
+}

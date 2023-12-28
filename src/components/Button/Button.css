@@ -1,0 +1,11 @@
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #EEEEEE;
+    background: var(--main-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}

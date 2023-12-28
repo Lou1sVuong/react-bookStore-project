@@ -1,0 +1,251 @@
+.cartEmpty {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    bottom: var(--border);
+    border-radius: 8px;
+
+    box-shadow: var(--box-shadow);
+}
+.imgEmptyCart {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeded;
+    width: 100%;
+}
+.imgEmptyCart img {
+    width: 10%;
+    height: auto;
+    padding: 2rem 0;
+}
+.cartEmpty {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    bottom: var(--border);
+    border-radius: 8px;
+}
+.title-cartEmpty {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.cartEmpty span {
+    color: var(--secondary-color);
+}
+.cartEmpty p {
+    font-size: 1.5rem;
+}
+.contentEmptyCart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.CartMainLayout {
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    background-color: rgb(239, 237, 237);
+    border: var(--border);
+}
+
+.cart-detail,
+.checkOut {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-detail {
+    width: 100%;
+
+}
+
+.checkOut {
+    min-width: 30%;
+}
+
+.zipCode,
+.totalLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.65rem;
+    background-color: white;
+    padding: 3rem 3rem;
+    font-size: 14px;
+}
+
+.checkbox,
+.selectCountry,
+.enterZipCode {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.selectCountry select {
+    font-weight: bold;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.Subtotal,
+.Shipping,
+.SalesTax,
+.Total {
+    display: flex;
+    gap: 2rem;
+}
+
+.Subtotal,
+.Total {
+    font-weight: bold;
+}
+
+.line-break {
+    height: 0.175rem;
+}
+
+.totalLayout .content-total {
+    margin-left: auto;
+    text-align: right;
+}
+
+.button-checkout {
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+
+    width: 100%;
+    padding: 1.5rem 2rem;
+
+    background-color: var(--main-color);
+    color: #fff;
+    margin-top: 2.5rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.button-checkout:hover {
+    background-color: var(--dark-color);
+}
+
+.button-checkout span {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.shopping-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-cart-table th,
+.shopping-cart-table td {
+    font-size: 16px;
+    border-bottom: var(--border);
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.scrollable-body-1 {
+}
+.shopping-cart-table th,
+.shopping-cart-table td {
+    font-size: 16px;
+    border-bottom: var(--border);
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.shopping-cart-table td p.truncate-text {
+    /* white-space: nowrap; */
+    overflow: hidden; /* Ẩn phần vượt quá kích thước của ô */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm elipsis (...) */
+  }
+  
+
+
+.shopping-cart-table th {
+    background-color: #f2f2f2;
+}
+
+.shopping-cart-table th {
+    background-color: #ffffff;
+}
+
+.shopping-cart-table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable-body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 595px;
+    overflow-y: scroll;
+}
+
+
+
+
+.scrollable-body-1 {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.scrollable-body-1::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-body-1 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

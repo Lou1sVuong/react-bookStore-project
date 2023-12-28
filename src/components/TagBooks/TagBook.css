@@ -1,0 +1,126 @@
+.heading-tags {
+    border-bottom: var(--border);
+}
+.heading-tags span {
+    display: inline-block;
+    font-size: 2rem;
+    color: #707070;
+    background: #fff;
+    font-weight: 400;
+}
+
+.tags .tags-slider .box{
+    margin:1rem 0;
+    position: relative;
+    overflow: hidden;
+    border:var(--border);
+    text-align: center;
+}
+.tags .tags-slider .box:hover{
+    border:var(--border-hover);
+}
+
+.tags .tags-slider .box .image{
+    padding:1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+
+.tags .tags-slider .box:hover .image{
+    transform: translateY(6rem);
+}
+
+.tags .tags-slider .box .image img{
+    height: 17rem;
+    width: auto;
+}
+
+.tags .tags-slider .box .icons{
+    border-bottom: var(--border-hover);
+    position: absolute;
+    top:0; left:0; right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-105%);
+}
+
+.tags .tags-slider .box:hover .icons{
+    transform: translateY(0%);
+}
+
+.tags .tags-slider .box .icons a{
+    color:var(--black);
+    font-size: 2.2rem;
+    padding:1.3rem 1.5rem;
+}
+
+.tags .tags-slider .box .icons a:hover{
+    background:var(--main-color);
+    color:#fff;
+}
+
+.tags .tags-slider .box .content{
+    background:#eee;
+    padding:1.5rem;
+}
+
+.tags .tags-slider .box .content h3{
+    font-size: 2rem;
+    color:var(--black);
+}
+
+.tags .tags-slider .box .content .price{
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color:var(--black);
+    padding-top: 1rem;
+}
+
+.tags .tags-slider .box .content .price span{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    text-decoration: line-through;
+}
+
+.Product-Specifications,
+.Product-Description {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 0.875rem;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+.header-Specifications,
+.header-Description {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    align-items: center;
+    background-color: rgba(0,0,0,.02);
+    color: rgba(0,0,0,.87);
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.Brand,
+.Language,
+.ImportLocal,
+.Stock,
+.ShipsFrom
+ {
+    font-size: 14px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.text {
+   color: #878787 ;
+}
+.contentDescription {
+    text-align: justify;
+    line-height: 2rem;
+}

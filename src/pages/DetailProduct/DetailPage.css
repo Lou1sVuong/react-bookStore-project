@@ -1,0 +1,356 @@
+.Product {
+    display: flex;
+    padding: 30px 10px;
+    gap: 150px;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.Product {
+    justify-content: center;
+    align-items: center;
+    /* height: 90vh; */
+    margin-bottom: 50px;
+  }
+
+
+.if-1 {
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+}
+
+.container-3 {
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.star-rate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star {
+    display: flex;
+    gap: 2px;
+    color: var(--start-color);
+}
+
+
+
+.price {
+    font-size: 24px;
+    color: black;
+}
+
+.delPrice {
+    text-decoration: line-through;
+    color: #656464;
+}
+
+.text {
+    width: 150px;
+}
+
+.shopVouchers,
+.addOn,
+.delivery
+ {
+    font-size: 16px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.quantity{
+    font-size: 16px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+
+.shopVouchers>.voucher {
+    font-size: 10px;
+}
+
+.addOn>.voucher {
+    font-size: 10px;
+}
+
+.voucher {
+    background-color: #f3f3f3;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.btn-product {
+    padding-top: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button-buy {
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.button-buy:hover {
+    background-color: var(--dark-color);
+}
+
+.button-addtocard {
+    --background: rgba(0, 0, 0, 0.2);
+    --text: #fff;
+    --cartV: #fff;
+    --tick: var(--background);
+    position: relative;
+    border: none;
+    background: none;
+    padding: 8px 28px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    min-width: 144px;
+    color: var(--text);
+    background: var(--background);
+    transform: scale(var(--scale, 1));
+    transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+}
+.button-addtocard:active {
+    --scale: 0.95;
+}
+.button-addtocard span {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-left: -8px;
+    line-height: 26px;
+    transform: translateY(var(--span-y, 0));
+    transition: transform 0.7s ease;
+}
+.button-addtocard span:before, .button-addtocard span:after {
+    content: '';
+    width: var(--w, 2px);
+    height: var(--h, 14px);
+    border-radius: 1px;
+    position: absolute;
+    left: var(--l, 8px);
+    top: var(--t, 6px);
+    background: currentColor;
+    transform: scale(0.75) rotate(var(--icon-r, 0deg)) translateY(var(--icon-y, 0));
+    transition: transform 0.65s ease 0.05s;
+}
+.button-addtocard span:after {
+    --w: 14px;
+    --h: 2px;
+    --l: 2px;
+    --t: 12px;
+}
+.button-addtocard .cartV {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -18px;
+    transform-origin: 12px 23px;
+    transform: translateX(-120px) rotate(-18deg);
+}
+.button-addtocard .cartV:before, .button-addtocard .cartV:after {
+    content: '';
+    position: absolute;
+}
+.button-addtocard .cartV:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px var(--cartV);
+    bottom: 0;
+    left: 9px;
+    filter: drop-shadow(11px 0 0 var(--cartV));
+}
+.button-addtocard .cartV:after {
+    width: 16px;
+    height: 9px;
+    background: var(--cartV);
+    left: 9px;
+    bottom: 7px;
+    transform-origin: 50% 100%;
+    transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0));
+    transition: transform 1.2s ease var(--fill-d);
+}
+.button-addtocard .cartV svg {
+    z-index: 1;
+    width: 36px;
+    height: 26px;
+    display: block;
+    position: relative;
+    fill: none;
+    stroke: var(--cartV);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.button-addtocard .cartV svg polyline:last-child {
+    stroke: var(--tick);
+    stroke-dasharray: 10px;
+    stroke-dashoffset: var(--offset, 10px);
+    transition: stroke-dashoffset 0.4s ease var(--offset-d);
+}
+.button-addtocard.loading {
+    --scale: 0.95;
+    --span-y: -32px;
+    --icon-r: 180deg;
+    --fill: 1;
+    --fill-d: 0.8s;
+    --offset: 0;
+    --offset-d: 1.73s;
+}
+.button-addtocard.loading .cartV {
+    animation: cartV 3.4s linear forwards 0.2s;
+}
+@keyframes cartV {
+    12.5% {
+        transform: translateX(-60px) rotate(-18deg);
+   }
+    25%, 45%, 55%, 75% {
+        transform: none;
+   }
+    50% {
+        transform: scale(0.9);
+   }
+    44%, 56% {
+        transform-origin: 12px 23px;
+   }
+    45%, 55% {
+        transform-origin: 50% 50%;
+   }
+    87.5% {
+        transform: translateX(70px) rotate(-18deg);
+   }
+    100% {
+        transform: translateX(140px) rotate(-18deg);
+   }
+}
+
+
+.container {
+    position: relative;
+    max-width: 40%;
+    height: auto;
+}
+.container-2 {
+    background-color: rgba(239, 235, 235 , 0.675);
+    padding: 15% 10%;
+    margin-bottom: 5px;
+    border-radius: 5%;
+}
+
+
+.cursor {
+    cursor: pointer;
+}
+
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+
+.br {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 60px;
+}
+
+.fp {
+    display: flex;
+    grid-row-gap: 25px;
+    gap: 15px;
+    margin: 25px 15px;
+    align-items: center;
+}
+
+.favorite {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.favorite>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section {
+    display: block;
+    padding: 5rem 9%;
+}
+
+.share>i {
+    font-size: 24px;
+}
+.fp>i {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+
+  /* .containerImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .slick-slide img {
+    width: 70%;
+    height: auto; 
+  }
+
+
+/* Căn giữa ảnh trong slider */
+.slick-slide img {
+  display: block;
+  margin: 0 auto; /* Để ảnh căn giữa theo chiều ngang */
+}
+
